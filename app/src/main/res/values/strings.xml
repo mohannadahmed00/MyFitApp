@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">My Fit</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="forget_password"><u>Forget Password</u></string>
+    <string name="login">Login</string>
+    <string name="create_new_account"><u>Create New Account</u></string>
+    <string name="yourfit"><b>YourFit</b></string>
+    <string name="sign_up">Sign Up</string>
+    <string name="create_account">Create Account</string>
+    <string name="next">NEXT</string>
+    <string name="please_provide_your_basic_fit_info">Please Provide Your Basic Fit Info</string>
+    <string name="height">Height</string>
+    <string name="weight">Weight</string>
+    <string name="neck_sie">Neck Sie</string>
+    <string name="level">Level</string>
+    <string name="training_time">Training Time Per Week</string>
+    <string name="push">How Many Pushups?</string>
+    <string name="your_fit_is_our_priority"><b>YOUR FIT</b> is our priority</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="home">Home</string>
+    <string name="social">Social</string>
+    <string name="groups">Groups</string>
+    <string name="friends">Friends</string>
+    <string name="i_don_t_have_an_account">I don\'t have an account?</string>
+    <string name="todo">TODO</string>
+    <string name="verification">Verification</string>
+</resources>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="mealViewModel"
+            type="com.example.myfit.activities.models.MealViewModel" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".activities.activities.MainActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="week #3 (70%)"
+                    android:textColor="@color/purple_700"
+                    android:textStyle="bold" />
+
+                <ProgressBar
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:max="100"
+                    android:minWidth="200dp"
+                    android:minHeight="20dp"
+                    android:progress="70"
+                    android:progressTint="@color/purple_700" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="month #1 (30%)"
+                    android:textColor="@color/purple_200"
+                    android:textStyle="bold" />
+
+                <ProgressBar
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:max="100"
+                    android:minWidth="200dp"
+                    android:minHeight="20dp"
+                    android:progress="30"
+                    android:progressTint="@color/purple_200" />
+
+                <!--<TextView
+                    android:id="@+id/tv_name_fragment_profile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Spong bob"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_email_fragment_profile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="+201101105574" />
+
+                <TextView
+                    android:id="@+id/tv_birthdate_fragment_profile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Spongbob@hotmail.com"
+                    android:textColor="@color/gray" />-->
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_width="125dp"
+                android:layout_height="125dp"
+                android:layout_marginStart="10dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/iv_user_img_fragment_home"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:onClick="@{()->mealViewModel.getMeal()}"
+                    android:layout_centerInParent="true" />
+
+                <ProgressBar
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:max="100"
+                    android:progress="65"
+                    android:progressDrawable="@drawable/circle_bar"
+                    android:progressTint="@color/purple_500" />
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_meals_fragment_home"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="50"
+            android:background="@color/lighter_gray"
+            android:divider="@color/trans"
+            android:listSelector="@color/trans"
+            android:scrollbars="none" />
+
+    </LinearLayout>
+</layout>
